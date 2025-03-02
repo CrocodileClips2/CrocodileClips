@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crocodile Clips 2.0</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <div class="background-hover"></div>
+    <div class="version-widget" id="version-widget">Version 2.0 Beta</div>
+    <div class="nav">
+        <a href="home.html"><button class="active">HOME</button></a>
+        <a href="g@mes.html"><button>G&#x1D00;MES</button></a>
+        <a href="about.html"><button>ABOUT</button></a>
+    </div>
+    <div class="container">
+        <div class="logo">
+            <a href="home.html"><img src="Crocodile Clips Logo.png" id="reset-logo"></a>
+        </div>
+        </div>
+        <div class="version-popup" id="version-popup" data-version-history='[
+        {"version": "1.9", "details": "Added feature X, fixed bug Y."},
+        {"version": "1.8", "details": "Implemented feature Z, improved performance."}
+    ]'>            
+            <div class="version-popup-content">
+                <span class="close-version-popup">&times;</span>
+                <h2>Version 2.0 Beta Information</h2>
+                <p>This is a beta version of Crocodile Clips 2.0.</p>
+                <p>Features:</p>
+                <ul>
+                    <li>Video Search</li>
+                    <li>Video Filters</li>
+                    <li>Stream Videos</li>
+                    <li>About Section in (BETA)</li>
+                </ul>
+        
+                <div class="version-updates">
+                    <button class="version-updates-toggle">Previous Updates</button>
+                    <div class="version-updates-dropdown">
+                        <div class="version-update">
+                            <h3>X</h3>
+                            <p>X</p>
+                        </div>
+                        <div class="version-update">
+                            <h3>X</h3>
+                            <p>X</p>
+                        </div>
+                        </div>
+                </div>
+        
+                <p>More features coming soon!</p>
+            </div>
+        </div>
+        <div class="search-filter">
+            <input type="text" id="search-box" placeholder="Search videos...">
+            <button id="filter-btn"><img src="filter.svg" alt="Filter"></button>
+        </div>
+        <div class="top-videos">
+            <div class="video-container top" data-title="Lotus Leaf Rare" data-google-drive-id="1vkAUajPnEQDCcNipHWvuvPXR0y1oo5_F"><img src="lotus leaf rare.png"></div>
+            <div class="video-container top" data-title="My Duns" data-google-drive-id="1ppuvNbjGDlyTtX0gOq-GzRyAGaA1DDvB"><img src="My duns.png"></div>
+            <div class="video-container top" data-title="Epic Games Skin" data-google-drive-id="14z2d-TxdJqSDdXPUN_cO-ezzSgqhju_H"><img src="epic games skin.png"></div>
+        </div>
+        <div class="filter-popup" id="filter-popup">
+            <div class="filter-content">
+                <h3>Filter Options</h3>
+                <label for="source">Video Source:</label>
+                <select id="source">
+                    <option value="all">All</option>
+                    <option value="youtube">YouTube</option>
+                    <option value="little-crocodile">Little Crocodile</option>
+                    <option value="bbc">BBC</option>
+                </select>
+                <label for="type">Video Type:</label>
+                <select id="type">
+                    <option value="all">All</option>
+                    <option value="shorts">Shorts</option>
+                    <option value="video">Video</option>
+                    <option value="series-movie">Series / Movie</option>
+                </select>
+                <button id="apply-filter">Apply</button>
+                <button id="close-filter">Close</button>
+            </div>
+        </div>
+        <div class="spacer"></div>
+        <div class="more-videos">
+            <div class="video-container" data-title="RARE Crocodile Baked in Lotus leaf and Yellow Clay!" data-source="youtube" data-type="video" data-google-drive-id="1vkAUajPnEQDCcNipHWvuvPXR0y1oo5_F"><img src="lotus leaf rare.png"></div>
+            <div class="video-container" data-title="My Duns" data-source="little-crocodile" data-type="video" data-google-drive-id="1ppuvNbjGDlyTtX0gOq-GzRyAGaA1DDvB"><img src="My duns.png"></div>
+            <div class="video-container" data-title="Epic games please make me a skin" data-source="little-crocodile" data-type="video" data-google-drive-id="14z2d-TxdJqSDdXPUN_cO-ezzSgqhju_H"><img src="epic games skin.png"></div>
+            <div class="video-container" data-title="30 Spectacular Hunts Of The Crocodile King" data-source="youtube" data-type="video" data-google-drive-id="11RbuJg1XkQqsrGKmHHnXcX-Q_xjzS12W"><img src="30 Spectacular Hunts Of The Crocodile King.png"></div>
+            <div class="video-container" data-title="30 Times Injured Crocodiles When Hunting Failed" data-source="youtube" data-type="video" data-google-drive-id="1FgY6Z2NVmTvsT-p65mCxkYJT24l1C6IW"><img src="30 Times Injured Crocodiles When Hunting Failed.png"></div>
+            <div class="video-container" data-title="Crocodile attacks tourist" data-source="youtube" data-type="video" data-google-drive-id="10tt0sbXIrzG_XrwhCVe1G59TKo6P-3BY"><img src="Crocodile attacks tourist.png"></div>
+            <div class="video-container" data-title="How to cook a crocodile" data-source="youtube" data-type="video" data-google-drive-id="1KeJE1F_MKU8GTPsEaq9w0uQIHYf-ebe9"><img src="How to cook a crocodile.png"></div>
+            <div class="video-container" data-title="MONSTER CROCODILE Seen Walking On Land" data-source="youtube" data-type="video" data-google-drive-id="1LFXYtdx1_35ClPtTmmKwxuDDHJWJVJsC"><img src="MONSTER CROCODILE Seen Walking On Land.png"></div>
+            <div class="video-container" data-title="Police Officer vs Crocodile" data-source="youtube" data-type="video" data-google-drive-id="1cufe9mxmlJGa8rHaFg7t8tkQtNhI_mZe"><img src="Police Officer vs Crocodile.png"></div>
+            <div class="video-container" data-title="Snappy the Little Crocodile" data-source="youtube" data-type="video" data-google-drive-id="17_Ql2_xOOW74BaksNm_Kj6bnG1m2KIGR"><img src="Snappy the Little Crocodile.png"></div>
+            <div class="video-container" data-title="People Cook a Little Crocodile" data-source="youtube" data-type="video" data-google-drive-id="14SH1xzOeljydTqsKK5o2Efz_ebrf4N9A"><img src="People Cook a Little Crocodile.png"></div>
+            <div class="video-container" data-title="Top 5 Killer Crocodile Moments" data-source="bbc" data-type="series-movie" data-google-drive-id="19N7mgtrrHSKaR6h4WPB3_wwLOaC6WhEn"><img src="Top 5 Killer Crocodile Moments.png"></div>
+            <div class="video-container" data-title="crocodile!!!!!!!!!" data-source="little-crocodile" data-type="video" data-google-drive-id="1NNuTXVHSymJyaiJsw9FtVOdAc9AKpmJI"><img src="crocodile!!!!!!!!!.png"></div>
+            <div class="video-container" data-title="Diglett noes is a mouth" data-source="little-crocodile" data-type="video" data-google-drive-id="199XbFRhAKdh7pBz6OLLgcBFx1WbLEhth"><img src="Diglett noes is a mouth.png"></div>
+            <div class="video-container" data-title="In town" data-source="little-crocodile" data-type="video" data-google-drive-id="1wSu2IcjI1NAIoQUVNzseu2_UEOWxTvDr"><img src="In town.png"></div>
+            <div class="video-container" data-title="my new bag_crocodile team bag" data-source="little-crocodile" data-type="video" data-google-drive-id="1mIDXpmzwWdPsx9bVs68AR5C_J3rNT1na"><img src="my new bag_crocodile team bag.png"></div>
+            <div class="video-container" data-title="Nice boom video" data-source="little-crocodile" data-type="video" data-google-drive-id="1kheS4Ceq0yrILvNMZ6B_NiNDI13VdCXZ"><img src="Nice boom video.png"></div>
+            <div class="video-container" data-title="No bulling" data-source="little-crocodile" data-type="video" data-google-drive-id="1Vr8uV5AVRlah6FEIeAplzbQ7nTXIsEwj"><img src="No bulling.png"></div>
+            <div class="video-container" data-title="not bad for my first time" data-source="little-crocodile" data-type="video" data-google-drive-id="1bPySfTKHEFyPNY7lapMwgTamrADkYEa5"><img src="not bad for my first time.png"></div>
+            <div class="video-container" data-title="Star wars move" data-source="little-crocodile" data-type="video" data-google-drive-id="1daQJ3GDs9UC4_fWt7LV7LRKbeodkHPU0"><img src="Star wars move.png"></div>
+            <div class="video-container" data-title="Star wars wor" data-source="little-crocodile" data-type="video" data-google-drive-id="1rahpRY_KFx9Qyo1rNwyg0zwlcZodUwh6"><img src="Star wars wor.png"></div>
+            <div class="video-container" data-title="Stay toon" data-source="little-crocodile" data-type="video" data-google-drive-id="1jlzRXq97nf2Llyp_AOfh3IgDtbQpvEO0"><img src="Stay toon.png"></div>
+            <div class="video-container" data-title="y i didn't post" data-source="little-crocodile" data-type="video" data-google-drive-id="1kbXZ59rqtHi__XArQJ0_6VwDiA6DFkJv"><img src="y i didn't post.png"></div>
+            <div class="video-container" data-title="Bird and fish" data-source="little-crocodile" data-type="video" data-google-drive-id="1UVCg-BjD6C8GZUQwHdCdFD4WLASj_kKw"><img src="Bird and fish.png"></div>
+
+        </div>
+    </div>
+    <div class="video-popup" id="video-popup">
+        <div class="video-popup-content">
+            <span class="close-popup">&times;</span>
+            <div id="video-embed"></div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Crocodile Clips - ReturnAlt10 Studios</p>
+    </footer>
+</body>
+</html>
