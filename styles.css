@@ -387,3 +387,14 @@ body {
 .red-cross::after {
     transform: rotate(-45deg);
 }
+
+
+.video-container:hover,
+.version-widget:hover,
+.nav a button:hover,
+#filter-btn:hover,
+.close-popup:hover,
+.close-version-popup:hover,
+.version-updates-toggle:hover {
+    cursor: pointer;
+}

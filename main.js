@@ -106,5 +106,16 @@ document.addEventListener("DOMContentLoaded", () => {
     versionUpdatesToggle.addEventListener("click", () => {
         versionUpdatesDropdown.classList.toggle("show");
     });
+
+
+
     
 });
+
+
+const versionPopup = document.getElementById("version-popup");
+
+if (versionPopup) {
+    const versionHistory = versionPopup.dataset.versionHistory;
+    localStorage.setItem("versionHistory", versionHistory);
+}
