@@ -119,3 +119,27 @@ if (versionPopup) {
     const versionHistory = versionPopup.dataset.versionHistory;
     localStorage.setItem("versionHistory", versionHistory);
 }
+
+
+
+
+const addToHomescreen = document.getElementById("add-to-homescreen");
+    const closeHomescreenPrompt = document.getElementById("close-homescreen-prompt");
+
+    // Check if on mobile and not already installed
+    function isMobile() {
+        return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+    }
+
+    function isStandalone() {
+        return window.matchMedia('(display-mode: standalone)').matches || window.navigator.standalone === true;
+    }
+
+    if (isMobile() && !isStandalone() && localStorage.getItem("homescreenPromptClosed") !== "true") {
+        addToHomescreen.style.display = "block";
+    }
+
+    closeHomescreenPrompt.addEventListener("click", () => {
+        addToHomescreen.style.display = "none";
+        localStorage.setItem("homescreenPromptClosed", "true");
+    });
