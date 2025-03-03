@@ -401,3 +401,53 @@ body {
 
 
 
+.add-to-homescreen {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #2a2a2a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.add-to-homescreen p {
+    margin: 0;
+    flex-grow: 1;
+}
+
+#close-homescreen-prompt {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+.mobile-close-video {
+    background: white;
+    color: black;
+    border: 1px solid transparent;
+    padding: 10px 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+}
+
+.mobile-close-video:hover {
+    border: 1px solid green;
+}
+
+@media (max-width: 768px) {
+    .mobile-close-video {
+        display: block; /* Show on mobile */
+        width: 100%; /* Full width */
+        box-sizing: border-box; /* Include padding in width */
+    }
+}

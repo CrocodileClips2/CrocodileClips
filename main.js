@@ -123,3 +123,14 @@ if (versionPopup) {
 
 
 
+const videoPopup = document.getElementById("video-popup");
+const videoEmbed = document.getElementById("video-embed");
+const closePopup = document.querySelector(".close-popup");
+const mobileCloseVideo = document.getElementById("mobile-close-video");
+
+// ... your existing code ...
+
+mobileCloseVideo.addEventListener("click", () => {
+    videoPopup.style.display = "none";
+    videoEmbed.innerHTML = "";
+});
