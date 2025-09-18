@@ -10,8 +10,14 @@
     <script defer src="main.js"></script>
 </head>
 <body>
+    <div class="image-popup" id="image-popup">
+        <div class="image-popup-content">
+            <span class="close-image-popup">&times;</span>
+            <img src="End of An Era.png" alt="Popup Image">
+        </div>
+    </div>
     <div class="background-hover"></div>
-    <div class="version-widget" id="version-widget">Version 2.0 Beta</div>
+    <div class="version-widget" id="version-widget">Version 2.1 Beta</div>
     <div class="nav">
         <a href="home.html"><button class="active">HOME</button></a>
         <a href="g@mes.html"><button>G&#x1D00;MES</button></a>
@@ -29,8 +35,19 @@
     ]'>
         <div class="version-popup-content">
             <span class="close-version-popup">&times;</span>
-            <h2>Version 2.0 Beta Information</h2>
-            <p>This is a beta version of Crocodile Clips 2.0.</p>
+            <h2>Version History</h2>
+            <p>This is a beta version of Crocodile Clips 2.1.</p>
+            <p>Features:</p>
+            <ul>
+                <li>UI Redesign for Filter</li>
+                <li>UI Redesign for Version History</li>
+            </ul>
+            <div class="version-updates">
+                <button class="version-updates-toggle">Previous Updates</button>
+                <div class="version-updates-dropdown">
+                    <div class="version-update">
+                        <h3>Version 2.0 Beta</h3>
+                        <p>This is a beta version of Crocodile Clips 2.0.</p>
             <p>Features:</p>
             <ul>
                 <li>Video Search</li>
@@ -38,17 +55,10 @@
                 <li>Stream Videos</li>
                 <li>About Section in (BETA)</li>
                 <li>Mobile App [ADD TO HOMESCREEN] in (BETA)</li>
-            </ul>
-            <div class="version-updates">
-                <button class="version-updates-toggle">Previous Updates</button>
-                <div class="version-updates-dropdown">
-                    <div class="version-update">
-                        <h3>X</h3>
-                        <p>X</p>
                     </div>
                     <div class="version-update">
-                        <h3>X</h3>
-                        <p>X</p>
+                        <h3>-</h3>
+                        <p>-</p>
                     </div>
                 </div>
             </div>
@@ -67,22 +77,28 @@
         <div class="filter-popup" id="filter-popup">
             <div class="filter-content">
                 <h3>Filter Options</h3>
-                <label for="source">Video Source:</label>
-                <select id="source">
-                    <option value="all">All</option>
-                    <option value="youtube">YouTube</option>
-                    <option value="little-crocodile">Little Crocodile</option>
-                    <option value="bbc">BBC</option>
-                </select>
-                <label for="type">Video Type:</label>
-                <select id="type">
-                    <option value="all">All</option>
-                    <option value="shorts">Shorts</option>
-                    <option value="video">Video</option>
-                    <option value="series-movie">Series / Movie</option>
-                </select>
-                <button id="apply-filter">Apply</button>
-                <button id="close-filter">Close</button>
+                <div class="filter-dropdown">
+                    <label for="source">Video Source:</label>
+                    <select id="source">
+                        <option value="all">All</option>
+                        <option value="youtube">YouTube</option>
+                        <option value="little-crocodile">Little Crocodile</option>
+                        <option value="bbc">BBC</option>
+                    </select>
+                </div>
+                <div class="filter-dropdown">
+                    <label for="type">Video Type:</label>
+                    <select id="type">
+                        <option value="all">All</option>
+                        <option value="shorts">Shorts</option>
+                        <option value="video">Video</option>
+                        <option value="series-movie">Series / Movie</option>
+                    </select>
+                </div>
+                <div class="filter-actions">
+                    <button id="apply-filter" class="apply-btn">Apply</button>
+                    <button id="close-filter" class="reset-btn">Close</button>
+                </div>
             </div>
         </div>
         <div class="spacer"></div>

@@ -134,3 +134,21 @@ mobileCloseVideo.addEventListener("click", () => {
     videoPopup.style.display = "none";
     videoEmbed.innerHTML = "";
 });
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+    // ... your existing code ...
+
+    const imagePopup = document.getElementById("image-popup");
+    const closeImagePopup = document.querySelector(".close-image-popup");
+
+    // Show the popup on page load
+    imagePopup.style.display = "block";
+
+    closeImagePopup.addEventListener("click", () => {
+        imagePopup.style.display = "none";
+    });
+
+    // ... your existing code ...
+});
